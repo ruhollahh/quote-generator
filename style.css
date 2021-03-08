@@ -1,0 +1,135 @@
+@font-face {
+  font-family: Vazir;
+  src: url("/fonts/Vazir.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Vazir;
+  src: url("/fonts/Vazir-Bold.ttf");
+  font-weight: bold;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Set root font size */
+html {
+  font-size: calc(0.333vw + 1em);
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%230f0f0f' fill-opacity='0.08'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  direction: rtl;
+  min-height: 100vh;
+  font-family: "Vazir", sans-serif;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+article {
+  box-shadow: 0 0.3rem 0.6rem 0.4rem rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem 2rem;
+  width: 90%;
+  max-width: 70ch;
+}
+
+blockquote {
+  font-weight: bold;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: 0.9em;
+}
+
+button,
+a {
+  padding: 0.25em 0.5em;
+  color: black;
+}
+
+button:hover,
+a:hover {
+  opacity: 0.7;
+}
+
+button:active,
+a:active {
+  opacity: 1;
+}
+
+button {
+  border-radius: 5px;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+a {
+  border: 2px solid black;
+  border-radius: 5px;
+  text-decoration: none;
+}
