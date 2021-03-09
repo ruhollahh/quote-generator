@@ -1,12 +1,12 @@
 @font-face {
   font-family: Vazir;
-  src: url("./fonts/Vazir.ttf");
+  src: url("./assets/fonts/Vazir.ttf");
   font-weight: normal;
 }
 
 @font-face {
   font-family: Vazir;
-  src: url("./fonts/Vazir-Bold.ttf");
+  src: url("./assets/fonts/Vazir-Bold.ttf");
   font-weight: bold;
 }
 
@@ -88,15 +88,19 @@ article {
   max-width: 70ch;
 }
 
-blockquote {
-  font-weight: bold;
-}
-
 figure {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+blockquote {
+  font-weight: bold;
+}
+
+figcaption {
+  margin-top: 1rem;
 }
 
 footer {
@@ -129,6 +133,9 @@ button {
 }
 
 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 2px solid black;
   border-radius: 5px;
   text-decoration: none;
